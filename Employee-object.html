@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>The following example creates an employee object and uses the in operator to check if the ssn and employeeId properties exist in the object</h2>
+
+<p>Employee Object</p>
+
+<p id="ssn"></p>
+<p id="employeeid"></p>
+
+<script>
+let employee = {
+    firstName: "Peter",
+    lastName: "Doe",
+    employeeId: 1
+};
+
+document.getElementById("ssn").innerHTML=("ssn" in employee)
+document.getElementById("employeeid").innerHTML=("employeeId" in employee)
+</script>
+
+</body>
+</html>

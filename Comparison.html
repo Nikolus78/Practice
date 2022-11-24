@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Comparison</h2>
+
+<p>Object compare</p>
+
+<p id="apple"></p>
+<p id="orrange"></p>
+
+<script>
+let apple = {
+  valueOf: function () {
+    return 10;
+  },
+};
+
+let orange = {
+  toString: function () {
+    return '20';
+  },
+};
+
+document.getElementById("apple").innerHTML=(apple>10); 
+document.getElementById("orrange").innerHTML=(orange==20);
+</script>
+
+</body>
+</html>
